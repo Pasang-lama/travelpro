@@ -1,0 +1,51 @@
+header {
+    background-color: #10203950;
+    padding: 0px 100px;
+    color: white;
+    border-bottom: 1px solid gainsboro;
+    font-family: $primary-font;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    .logo {
+        border-right: 1px solid gainsboro;
+        padding-right: 20px;
+        padding-block: 23px;
+    }
+    nav {
+        flex-grow: 1;
+        border-right: 1px solid gainsboro;
+        padding-block: 40px;
+        ul {
+            gap: 50px !important;
+            justify-content: center;
+
+            li {
+                font-size: 18px;
+                font-weight: 500;
+            }
+        }
+    }
+    .right-content {
+ 
+        button {
+            background-color: transparent;
+            font-size: 20px;
+            color: white;
+            border: none;
+            margin-right: 20px;
+            height: 100%;
+            border-right: 1px solid gainsboro;
+            padding-right: 20px;
+            padding-block: 40px;
+
+        }
+
+        a {
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+}

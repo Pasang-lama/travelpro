@@ -1,0 +1,45 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    margin-inline: auto;
+    max-width: 1320px;
+    padding-inline: 20px;
+}
+
+
+.margin-top{
+    margin-top: 80px;
+}
+
+.d-flex{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.justify-content-between{
+    justify-content: space-between;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
