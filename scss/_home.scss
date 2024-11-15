@@ -20,4 +20,73 @@
 
         }
     }
+    .search-box{
+        position: absolute;
+        bottom: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(255, 255, 255, 0.479);
+        padding: 20px;
+        border-radius: 20px;
+        form{
+            background-color: white;
+            border-radius: 10px;
+            display: flex;
+            input,select{
+                border: none;
+                padding: 20px;
+                width: 300px;
+                border-right: 1px solid rgb(142, 142, 142);
+
+            }
+            button{
+                background-color: $primary-color;
+                color: white;
+                font-family: $primary-font;
+                border: none;
+                padding: 20px;
+                width: 200px;
+            }
+        }
+    }
+}
+
+.about-us{
+    figure{
+        height: 600px;
+        width: fit-content;
+    }
+    .custom-btn{
+        margin-top: 40px;
+    }
+}
+
+.features{
+    padding: 100px 0px;
+    background-image: url("../images/feature_bg.jpeg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    .container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        .feature-items{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            .icon{
+                height: 50px;
+                width: 50px;
+                background-color: white;
+            }
+            p{
+                font-family: $secondary-font;
+                color: gray;
+            }
+        }
+    }
+
 }
