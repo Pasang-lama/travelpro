@@ -5,6 +5,13 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Jost", sans-serif;
+  color: gray;
+  line-height: 24px;
+  font-size: 16px;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -67,6 +74,7 @@ img {
   color: #102039;
   font-family: "Playfair Display", serif;
   font-weight: 800;
+  line-height: 50px;
 }
 
 .custom-btn {
@@ -81,6 +89,10 @@ img {
 .text-content p {
   font-family: "Jost", sans-serif;
   color: rgb(10, 10, 10);
+}
+
+.text-center {
+  text-align: center;
 }
 
 header {
@@ -140,6 +152,7 @@ header .right-content a {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 80px;
+  line-height: 100px;
   font-weight: 600;
   width: 80%;
   font-family: "Playfair Display", serif;
@@ -163,7 +176,8 @@ header .right-content a {
   border-radius: 10px;
   display: flex;
 }
-.banner-section .search-box form input, .banner-section .search-box form select {
+.banner-section .search-box form input,
+.banner-section .search-box form select {
   border: none;
   padding: 20px;
   width: 300px;
@@ -214,4 +228,105 @@ header .right-content a {
 .features .container .feature-items p {
   font-family: "Jost", sans-serif;
   color: gray;
+  line-height: 24px;
+}
+
+.popular-tour-packages .packages-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.popular-tour-packages .packages-wrapper .packages-card {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.popular-tour-packages .packages-wrapper .packages-card::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.577));
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.popular-tour-packages .packages-wrapper .packages-card img {
+  height: 450px;
+}
+.popular-tour-packages .packages-wrapper .packages-card .hover-content {
+  padding: 30px;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  display: none;
+}
+.popular-tour-packages .packages-wrapper .packages-card .hover-content .tour-title {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.popular-tour-packages .packages-wrapper .packages-card:hover::before {
+  display: block;
+}
+.popular-tour-packages .packages-wrapper .packages-card:hover .hover-content {
+  display: block;
+}
+
+.funfact .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+.funfact .container figure {
+  position: relative;
+}
+.funfact .container figure::before {
+  content: "";
+  position: absolute;
+  height: 93%;
+  width: 60vw;
+  right: -20px;
+  bottom: 0;
+  background-color: #238CA2;
+  opacity: 0.5;
+  border-radius: 0 320px 320px 0;
+  z-index: -1;
+}
+.funfact .container figure .shapes {
+  position: absolute;
+  top: 0px;
+  left: -100px;
+  width: 60vw;
+}
+
+.destination-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.destination-wrapper .destination-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.destination-wrapper .destination-card:nth-child(2) {
+  grid-column: span 2;
+}
+.destination-wrapper .destination-card img {
+  transition: 0.5s;
+}
+.destination-wrapper .destination-card .destination-details {
+  position: absolute;
+  bottom: 0;
+  padding: 50px;
+  color: white;
+}
+.destination-wrapper .destination-card .destination-details .title {
+  font-size: 30px;
+  font-family: "Playfair Display", serif;
+  line-height: 40px;
+}
+.destination-wrapper .destination-card:hover img {
+  transform: scale(1.2);
 }/*# sourceMappingURL=style.css.map */
